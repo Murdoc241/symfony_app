@@ -8,14 +8,33 @@
     .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
 </style>
 
-<div class="example-wrapper">
+<div class="container mt-4">
+		<div class="jumbotron">
+			<h1 class="display-4">Bienvenue sur notre espace</h1>
+			<p class="lead">Pour profiter de notre plateforme, nous invitons tout d'abord à vous inscrire, cliquez sur le bouton inscription.</p>
+			<hr class="my-4">
+			<p>Pour commencer, rendez-vous sur la page d'inscription pour utiliser l'application.</p>
+			<a class="btn btn-primary btn-lgz" href="{{ path('app_inscription') }}" role="button">Inscription</a>
+		</div>
 
-    <h1>Hello Chef! ✅</h1>
+		<div class="recipes">
+			<h2 class="mt-4">Recettes de la communauté</h2>
+			<div class="d-flex justify-content-between">
+			
+					<div class="card border-primary mb-3" style="max-width: 20rem;">
+						<div class="card-header">Recette n°</div>
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href=""</a>
+							</h4>
+							<p class="card-text"></p>
+						</div>
+					</div>
+				
+			</div>
+		</div>
+	</div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/USER/Documents/symfony_projet/symfony_app/src/Controller/HomeController.php'|file_link(0) }}">src/Controller/HomeController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/USER/Documents/symfony_projet/symfony_app/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
-    </ul>
-</div>
 {% endblock %}
+
+
